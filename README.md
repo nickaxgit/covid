@@ -1,10 +1,10 @@
 # covid
 Queue manage
 
-To deploy:
-git clone
+<h1>To deploy:</h1>
+git clone --branch dev_adamr https://github.com/nickaxgit/covid.git
 cd to location...
-to get dependencies:
+<h1>To install dependencies:</h1>
 npm install
-to run:
+<h1>To run:</h1>
 node app.js
