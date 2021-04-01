@@ -29,16 +29,13 @@
         }
 
         function nextPatient() {
-            var x = document.getElementById("patientPresentButton");
-            var y = document.getElementById("nextPatientButton");
-            if (x.style.display === "none" && y.style.display === "block") {
-                x.style.display = "block";
-                y.style.display = "none";
-            } else {
-                x.style.display = "none";
-                y.style.display = "block";
+            var pp = document.getElementById("patientPresentButton");
+            var np = document.getElementById("nextPatientButton");
 
-            }
+            np.style.display = "none";
+            pp.style.display = "block";
+
+            callServer(URL)
             nowServing(document.getElementById("tentName").value)
 
         }
